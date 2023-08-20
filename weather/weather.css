@@ -1,0 +1,176 @@
+/* @import url('); */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url("https://images.pexels.com/photos/1098395/pexels-photo-1098395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* position: absolute; */
+    /* background-size: cover; */
+}
+
+.container {
+    padding: 20px 70px;
+    color: rgb(254, 254, 219);
+}
+
+.current-info {
+    /* border: 5px solid #5B6DCD; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 300px;
+}
+
+.date-container {
+    /* border: 5px solid #5B6DCD; */
+    margin: 5px;
+    padding: 5px;
+    font-weight: 100;
+}
+
+.date-container .time {
+    font-size: 70px;
+    font-weight: 100px;
+}
+
+.date-container #am-pm {
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.date-container .date {
+    font-size: 28px;
+    font-weight: 10;
+    font-style: italic;
+
+}
+
+.current-info .others {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid #5B6DCD; */
+    background-color: rgba(15, 13, 13, 0.253);
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+
+}
+
+.current-info .others .weather-item {
+    display: flex;
+    justify-content: space-between;
+    /* border: 5px solid #5B6DCD; */
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    /* width: 180px; */
+    font-family: monospace;
+}
+
+.place-container .time-zone {
+    /* border: 5px solid #5B6DCD; */
+    margin: 5px;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: 50;
+    text-align: end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.place-container .country {
+    /* border: 5px solid #5B6DCD; */
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: end;
+    background-color: rgba(15, 13, 13, 0.253);
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.future-forecast {
+    background: rgba(14, 1, 1, 0.498);
+    padding: 5px;
+    /* position: fixed; */
+    bottom: 0;
+    display: flex;
+    margin: 5px;
+    width: auto;
+    /* border: solid #5B6DCD 10px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid #f1f2f6 2px; */
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.future-forecast .today .day {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgba(97, 99, 100, 0.564);
+    border-radius: 10px;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid #f1f2f8 1px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 5px;
+}
+.day1{
+    /* justify-content: left;
+    align-items: start; */
+    /* margin-left: 0; */
+    color: rgba(244, 240, 240, 0.648);
+    font-weight: 100;
+    font-family: serif;
+}
+
+.weather-forecast-item .day {
+    background-color: rgba(97, 99, 100, 0.564);
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .future-forecast {
+        background: rgba(11, 11, 12, 0.559);
+        justify-content: start;
+        align-items: none;
+    overflow-x: scroll;
+    scrollbar-color: rgb(63, 63, 63);
+    }
+  }  
